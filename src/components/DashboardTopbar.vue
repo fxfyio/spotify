@@ -24,7 +24,7 @@
     background-color: #303950;
     height: 60px;
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +63,7 @@
         .group {
             width: 36px;
             height: 36px;
-            background-color: red;
+            background-color: gray;
             border-radius: 18px;
             margin-right: 10px;
         }
@@ -71,9 +71,9 @@
         .user {
             width: 36px;
             height: 36px;
-            background-color: red;
+            background-color: gray;
             border-radius: 18px;
-            margin-right: 30px;
+            margin-right: 10px;
         }
         display: flex;
     }

@@ -30,7 +30,7 @@ import { ref } from 'vue';
 /* 容器大小 */
 .banner {
   height: 200px;
-  width: calc(100vw - 300px);
+  width: calc(100vw - 324px);
   overflow: hidden;
   align-items: center;
   margin-top: 10px;

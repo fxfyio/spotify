@@ -23,9 +23,11 @@ import DashboardRecomendItem from './DashboardRecomendItem.vue';
 
 <style scoped>
 .recomend {
-    height: 200px;
+    height: 230px;
     width: 100%;
     border-radius: 10px;
+    padding: 0 10px;
+    /* padding-right: 30px; */
     .title {
         font-weight: bold;
         color: white;
@@ -40,7 +42,7 @@ import DashboardRecomendItem from './DashboardRecomendItem.vue';
 
 .grid-item {
   background-color: #2a2929;
-  padding: 10px;
+  /* padding: 10px; */
   text-align: center;
   border-radius: 10px;
  margin-bottom: 10px;
