@@ -26,7 +26,7 @@ import List from './List.vue'
         </div>
 
         <div class="library-list">
-            <List class="item" v-for="item in 10">111</List>
+            <List class="item" v-for="item in 8">111</List>
         </div>
     </div>
 
@@ -75,7 +75,7 @@ import List from './List.vue'
     padding:0 10px;
 
     .item{
-        height: 50px;
+        height: 60px;
         /* background: yellow; */
         margin-top: 10px;
     }

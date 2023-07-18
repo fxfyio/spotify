@@ -5,7 +5,7 @@
 
 
 <template>
-    <div class="container">
+    <div class="container highlight">
         <div class="left">
    
         </div>
@@ -41,5 +41,16 @@
         }
     }
     display: flex;
+}
+
+.highlight {
+  background-color: #121212; 
+  border-radius: 8px;
+  padding: 8px;
+  align-items: center;
+}
+
+.highlight:hover {
+  background-color: #181818;
 }
 </style>
