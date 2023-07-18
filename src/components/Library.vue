@@ -42,7 +42,7 @@ import List from './List.vue'
     width: 100%;
     height: 100px;
     margin-top: 10px;
-    background-color: #121212;
+    /* background-color: #121212; */
     .top {
         display: flex;
         align-items: center;
@@ -69,7 +69,7 @@ import List from './List.vue'
 
 .library-list {
     width: 100%;
-    height: calc(100vh - 120px - 100px - 10px - 20px);
+    height: calc(100vh - 120px - 100px - 10px - 20px - 80px);
     overflow: auto;
     background-color: #121212;
     padding:0 10px;

@@ -21,7 +21,7 @@ defineProps({
 <style scoped>
 .menu{
     width: 300px;
-    height: 100vh;
+    height: calc(100vh - 80px);
     background: #000;
     padding: 10px;
 }

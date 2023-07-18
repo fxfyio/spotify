@@ -30,7 +30,7 @@ import DashboardTopbar from './DashboardTopbar.vue';
 
     .dashboard-block {
         overflow: auto;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 160px);
 
         .item{
             height: 50px;
@@ -40,7 +40,7 @@ import DashboardTopbar from './DashboardTopbar.vue';
 
         &::-webkit-scrollbar {
             width: 10px;
-            height: 8px;
+            height: 0px;
         }
 
         &::-webkit-scrollbar-thumb {
