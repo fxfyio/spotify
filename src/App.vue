@@ -8,8 +8,7 @@ import PlaybackControl from './components/PlaybackControl.vue';
 </script>
 
 <template>
-
-  <div class="container">
+ <div class="container">
     <div class="container-content">
       <header class="wrapper">
       <SlideMenu  />
