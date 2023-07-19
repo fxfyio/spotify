@@ -1,17 +1,24 @@
 <script setup>
-import IconHome from './icons/IconHome.vue'
+import { defineProps, defineEmits } from 'vue'
 
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true
   },
 })
+
+const emits = defineEmits(['change-view'])
+
+const handleClick = () => {
+  emits('change-view', props.title)
+}
+
 </script>
 
 
 <template>
-    <div class="option-item">
+    <div class="option-item highlight" @click="handleClick">
         <slot></slot>
         <span class="item">{{title}}</span>
     </div>
@@ -34,5 +41,17 @@ defineProps({
     .item{
         margin-left: 20px;
     }
+}
+
+
+.highlight {
+  background-color: #121212; 
+  border-radius: 8px;
+  padding: 8px;
+  align-items: center;
+}
+
+.highlight:hover {
+  background-color: #181818;
 }
 </style>

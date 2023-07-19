@@ -1,4 +1,6 @@
 <script setup>
+import { defineProps, defineEmits } from 'vue'
+
 import Library from './Library.vue';
 import Options from './Options.vue';
 
@@ -8,11 +10,17 @@ defineProps({
     required: true
   }
 })
+
+const emits = defineEmits(['change-view'])
+
+const handleClick = (title) => {
+  emits('change-view', title)
+}
 </script>
 
 <template>
-    <div class="menu">
-        <Options/>
+    <div class="menu" >
+        <Options  @change-view="handleClick"/>
         <Library />
     </div>
 </template>

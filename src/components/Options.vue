@@ -2,17 +2,25 @@
 
 import OptionItem from './OptionItem.vue'
 import IconCommunity from './icons/IconCommunity.vue'
+import { defineEmits } from 'vue'
+
+const emits = defineEmits(['change-view'])
+
+const handleChangeView = (view) => {    
+    console.log(view)
+  emits('change-view', view)
+}
 
 </script>
 
 
 <template>
     <div class="container">
-        <OptionItem title="Home">
+        <OptionItem title="Home" @change-view="handleChangeView">
         <IconCommunity />
     </OptionItem>
 
-    <OptionItem title="Search">
+    <OptionItem title="Search" @change-view="handleChangeView">
         <IconCommunity/>
     </OptionItem>
     </div>
