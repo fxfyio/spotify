@@ -20,7 +20,7 @@
     border-radius: 10px;
     padding: 20px;
     margin-right: 30px;
-
+    cursor: pointer;
     .album-item-cover{
         width: 160px;
         height: 160px;

@@ -23,8 +23,9 @@ import SearchBrowseItem from './SearchBrowseItem.vue';
     h1 {
         color: white;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 30px;
         margin-left: 10px;
+        margin-top: 10px;
     }
     .grid-container {
         display: flex;

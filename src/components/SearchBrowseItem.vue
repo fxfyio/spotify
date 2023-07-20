@@ -18,6 +18,7 @@
     border-radius: 10px;
     width: 170px;
     height: 170px;
+    cursor: pointer;
     .title {
         color: white;
         margin-top: 10px;

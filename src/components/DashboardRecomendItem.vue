@@ -30,5 +30,6 @@
         font-weight: bold;
         font-size: medium;
     }
+    cursor: pointer;
 }
 </style>

@@ -9,10 +9,10 @@ import SearchBrowseAll from './SearchBrowseAll.vue';
 
     <div class="search-content">
         <SearchTopbar />
-        <!-- <div class="search-blocl"> -->
-            <SearchRecent />
+        <div class="search-block">
+             <SearchRecent />
              <SearchBrowseAll />
-        <!-- </div> -->
+        </div>
 
     </div>
 </template>
@@ -27,10 +27,10 @@ import SearchBrowseAll from './SearchBrowseAll.vue';
     margin-top: 10px;
     padding-right: 22px;
     overflow: hidden;
-    height: calc(100vh - 100px);
 
-    /* .search-block { */
+    .search-block {
         overflow: auto;
+        height: calc(100vh - 160px);
 
         .item{
             height: 50px;
@@ -49,7 +49,7 @@ import SearchBrowseAll from './SearchBrowseAll.vue';
             box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.10);
         }
         
-    /* } */
+    }
 }
 
 

@@ -41,6 +41,7 @@
         }
     }
     display: flex;
+    cursor: pointer;
 }
 
 .highlight {

@@ -37,6 +37,7 @@ const handleClick = () => {
     padding: 0 10px;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 
     .item{
         margin-left: 20px;

@@ -48,6 +48,7 @@ defineProps({
             .albums-top-more {
                 color: #b3b3b3;
                 font-weight: bold;
+                cursor: pointer;
             }
         }
 

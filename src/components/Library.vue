@@ -12,10 +12,10 @@ import List from './List.vue'
     <div class="containter">
         <div class="library">
             <div class="top">
-              <IconDocumentation />
+              <IconDocumentation class="item"/>
               <span> You Library</span>  
-              <IconSupport />
-              <IconTooling />
+              <IconSupport  class="item" />
+              <IconTooling  class="item" />
 
             </div>
             <div class="bottom">
@@ -49,6 +49,9 @@ import List from './List.vue'
         justify-content: space-evenly;
         height: 44px;
         color: white;
+        .item {
+            cursor: pointer;
+        }
     }
     .bottom {
         display: flex;
@@ -62,6 +65,7 @@ import List from './List.vue'
             width: 80px;
             text-align: center;
             color: white;
+            cursor: pointer;
         }
 
     }

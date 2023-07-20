@@ -11,7 +11,8 @@
             <div class="next"></div>
         </div>
         <div class="center">
-            
+            <div class="icon"></div>
+            <input type="text" class="input" placeholder="What do you want to listen to?"> 
         </div>
         <div class="right">
             <div class="upgrade"> Upgrade</div>
@@ -24,7 +25,7 @@
 
 <style scoped>
 .top-bar {
-    background-color: #303950;
+    background-color: #121212;
     height: 60px;
     width: 100%;
     border-radius: 10px;
@@ -50,6 +51,54 @@
         display: flex;
     }
 
+    .center {
+        background-color: #242424;
+        width: 400px;
+        height: 50px;
+        border-radius: 25px;
+        align-items: center;
+        display: flex;
+        padding: 4px 10px;
+        border: 2px solid #242424; 
+        .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: bisque;
+        }
+        .input {
+            width: 330px;
+            height: 100%;
+            margin-left: 10px;
+            background-color: #242424;
+            border: none;
+            color: white;
+            /* font-weight: bolder; */
+            font-size: 20px;
+        }
+        .input:focus {
+            border: none;
+            outline: none;
+        }
+        .input::placeholder {
+            font-size: 16px;
+        }
+
+        /* Internet Explorer, Edge */
+        .input:-ms-input-placeholder {
+            font-size: 16px;
+        }
+
+        /* Edge 18+ */
+        .input::-ms-input-placeholder {
+            font-size: 16px;
+        }
+    }
+
+
+    .center:focus-within {
+         border-color: white; 
+    }
     .right {
         align-items: center;
         .upgrade {

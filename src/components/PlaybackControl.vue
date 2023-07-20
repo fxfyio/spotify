@@ -70,6 +70,7 @@
             height: 50px;
             border-radius: 4px;
             background-color: gray;
+            cursor: pointer;
         }
 
         .p-info {
@@ -84,6 +85,7 @@
             .p-subtitle {
                 font-weight: 300;
                 color: gray;
+                cursor: pointer;
             }
 
         }
@@ -94,6 +96,7 @@
             height: 24px;
             background-color: gray;
             border-radius: 12px;
+            cursor: pointer;
         }
     }
 
@@ -114,6 +117,7 @@
                 background-color: gray;
                 border-radius: 12px;
                 margin: 0 10px;
+                cursor: pointer;
             }
             .c-buttons-0 {
                 width: 24px;
@@ -121,6 +125,7 @@
                 background-color: gray;
                 border-radius: 12px;
                 margin: 0 10px;
+                cursor: pointer;
             }
             .c-buttons-1 {
                 width: 24px;
@@ -128,6 +133,7 @@
                 background-color: gray;
                 border-radius: 12px;
                 margin: 0 10px;
+                cursor: pointer;
 
             }
             .c-buttons-2 {
@@ -136,6 +142,7 @@
                 background-color: gray;
                 border-radius: 22px;
                 margin: 0 10px;
+                cursor: pointer;
 
             }
             .c-buttons-3 {
@@ -144,6 +151,7 @@
                 background-color: gray;
                 border-radius: 12px;
                 margin: 0 10px;
+                cursor: pointer;
 
             }
             .c-buttons-4 {
@@ -152,6 +160,7 @@
                 background-color: gray;
                 border-radius: 12px;
                 margin: 0 10px;
+                cursor: pointer;
             }
         }
 
@@ -165,6 +174,7 @@
                 width: 60%;
                 border-radius: 2px;
                 background: #4d4c4c;
+                cursor: pointer;
             }
 
             .progress-bar {
@@ -172,6 +182,7 @@
                 height: 4px;
                 border-radius: 2px;
                 background: white;
+                cursor: pointer;
             }
             .c-time {
                 width: 20%;
@@ -204,6 +215,7 @@
             background-color: gray;
             border-radius: 12px;
             margin-right: 10px;
+            cursor: pointer;
         }
         .progress {
             height: 4px;
@@ -211,6 +223,7 @@
             border-radius: 2px;
             background: #4d4c4c;
             margin-right: 10px;
+            cursor: pointer;
         }
         
         .progress-bar {
@@ -218,6 +231,7 @@
             height: 4px;
             border-radius: 2px;
             background: white;
+            cursor: pointer;
         }
     
     }
