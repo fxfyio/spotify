@@ -2,7 +2,7 @@
 import { defineProps, defineEmits } from 'vue'
 
 import MenuLibrary from './MenuLibrary.vue';
-import Options from './Options.vue';
+import MenuOptionItemView from './MenuOptionItemView.vue';
 
 defineProps({
   msg: {
@@ -20,7 +20,7 @@ const handleClick = (title) => {
 
 <template>
     <div class="menu" >
-        <Options  @change-view="handleClick"/>
+        <MenuOptionItemView  @change-view="handleClick"/>
         <MenuLibrary />
     </div>
 </template>
