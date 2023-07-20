@@ -9,7 +9,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <dic class="cell">
+    <div class="cell">
         <div class="index"> {{ index + 1}} </div>
         <div class="cover"></div>
         <div class="title-box">
@@ -22,9 +22,9 @@ const props = defineProps({
         </div>
         <div class="album">专辑名称</div>
         <div class="date"> Des 29, 2022</div>
-        <div class="like">🩶</div>
-        <div class="time">08:23</div>
-    </dic>
+        <div class="like"> 🩶 </div>
+        <div class="time"> 08:23 </div>
+    </div>
 </template>
 <style>
 .cell {

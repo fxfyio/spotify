@@ -7,9 +7,17 @@ import { ref } from 'vue'
 import LibraryMain from './components/library/LibraryMain.vue';
 
 let mainView = ref('Home')
+let index = ref(0)
 
-const handleChangeView = (title) => {
+const props = defineProps({
+  index: {
+    type: Number
+  }
+})
+
+const handleChangeView = (title, i) => {
   mainView.value = title
+  index.value = i
 }
 </script>
 
@@ -25,7 +33,7 @@ const handleChangeView = (title) => {
     <main class="main">
       <Dashboard v-if="mainView === 'Home'"  />
       <Search v-if="mainView === 'Search'" />
-      <LibraryMain v-if="mainView === 'Library'" />
+      <LibraryMain v-if="mainView === 'Library'" :index="index" />
     </main>
     </div>
     <footer>

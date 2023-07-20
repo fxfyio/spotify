@@ -4,15 +4,24 @@ import LibraryTopBar from './LibraryTopBar.vue';
 import LibraryEvent from './LibraryEvent.vue';
 import LibraryList from './LibraryList.vue'
 import LibraryCell from './LibraryCell.vue';
+
+import { defineProps } from 'vue';
+defineProps({
+    index: {
+        type: Number,
+    },
+})
+
+
 </script>
 
 <template>
     <div class="library">
-        <div class="top-bar">
+        <div class="top-bar-box">
             <LibraryTopBar />
         </div>
         <div class="library-container">
-            <LibraryHeader />
+            <LibraryHeader :index="index" />
             <LibraryEvent />
             <LibraryList />
         </div>

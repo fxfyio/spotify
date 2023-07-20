@@ -4,17 +4,17 @@ import { defineProps, defineEmits } from 'vue'
 import MenuLibrary from './MenuLibrary.vue';
 import MenuOptionItemView from './MenuOptionItemView.vue';
 
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
+// defineProps({
+//   msg: {
+//     type: String,
+//     required: true
+//   }
+// })
 
 const emits = defineEmits(['change-view'])
 
-const handleClick = (title) => {
-  emits('change-view', title)
+const handleClick = (title, index) => {
+  emits('change-view', title, index)
 }
 </script>
 

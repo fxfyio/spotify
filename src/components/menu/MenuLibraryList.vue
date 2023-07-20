@@ -1,4 +1,14 @@
 <script setup>
+// import { defineExpos } from 'vue';
+
+const props = defineProps({
+  index: {
+    type: Number,
+    required: true
+  },
+})
+
+
 
 </script>
 
@@ -11,10 +21,10 @@
         </div>
         <div class="right">
             <div class="title">
-                标题
+                标题 {{ "000" + (index+ 1)}}
             </div>
             <div class="subtitle">
-                Playlist 123
+                Playlist {{ index + 1 }}
             </div>
         </div>
     </div>

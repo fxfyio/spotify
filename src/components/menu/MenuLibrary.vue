@@ -4,13 +4,13 @@ import IconTooling from '../icons/IconTooling.vue'
 import IconSupport from '../icons/IconSupport.vue'
 import List from './MenuLibraryList.vue'
 
-import { defineProps, defineEmits } from 'vue'
+import {defineEmits } from 'vue'
 
 
 const emits = defineEmits(['change-view'])
 
-const handleClick = () => {
-  emits('change-view', "Library")
+const handleClick = (index) => {
+  emits('change-view', "Library", index)
 }
 
 
@@ -36,7 +36,7 @@ const handleClick = () => {
         </div>
 
         <div class="library-list">
-            <List class="item" @click="handleClick" v-for="item in 8">111</List>
+            <List class="item"  v-for="(item, index) in 8"  @click="handleClick(index)" :index="index">111</List>
         </div>
     </div>
 

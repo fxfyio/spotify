@@ -73,7 +73,7 @@
             height: 36px;
             background-color: gray;
             border-radius: 18px;
-            margin-right: 10px;
+            margin-right:30px;
         }
         display: flex;
     }

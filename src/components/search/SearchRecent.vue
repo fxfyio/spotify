@@ -37,6 +37,10 @@ import AlbumItem from '../home/AlbumItem.vue'
             font-weight: bold;
             font-size: 30px;
         }
+        .more {
+            color: white;
+            opacity: 0.5;
+        }
     }
     .list {
         display: flex;

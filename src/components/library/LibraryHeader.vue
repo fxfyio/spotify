@@ -1,4 +1,13 @@
-<script setup></script>
+<script setup>
+import { defineProps } from 'vue';
+
+defineProps( {
+    index: {
+        type: Number
+    }
+})
+
+</script>
 
 <template> 
     <div class="library-header">
@@ -10,7 +19,7 @@
                 public playlist
             </div>
             <div class="title">
-               Dtd Playlist-FAVORITE SONGS ❤️
+               FAVORITE SONGS ❤️ {{ "000" + index }}
             </div>
             <div class="subtitle">
                 Created By Dtd Playlist App 
