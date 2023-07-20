@@ -4,6 +4,7 @@ import Dashboard from './components/home/Dashboard.vue';
 import PlaybackControl from './components/PlaybackControl.vue';
 import Search from './components/search/Search.vue';
 import { ref } from 'vue'
+import LibraryMain from './components/library/LibraryMain.vue';
 
 let mainView = ref('Home')
 
@@ -24,6 +25,7 @@ const handleChangeView = (title) => {
     <main class="main">
       <Dashboard v-if="mainView === 'Home'"  />
       <Search v-if="mainView === 'Search'" />
+      <LibraryMain v-if="mainView === 'Library'" />
     </main>
     </div>
     <footer>

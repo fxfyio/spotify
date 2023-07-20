@@ -21,7 +21,7 @@ const handleClick = (title) => {
 <template>
     <div class="menu" >
         <MenuOptionItemView  @change-view="handleClick"/>
-        <MenuLibrary />
+        <MenuLibrary @change-view="handleClick"/>
     </div>
 </template>
 

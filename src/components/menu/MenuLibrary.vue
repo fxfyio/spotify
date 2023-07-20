@@ -2,7 +2,17 @@
 import IconDocumentation from '../icons/IconDocumentation.vue'
 import IconTooling from '../icons/IconTooling.vue'
 import IconSupport from '../icons/IconSupport.vue'
-import List from './List.vue'
+import List from './MenuLibraryList.vue'
+
+import { defineProps, defineEmits } from 'vue'
+
+
+const emits = defineEmits(['change-view'])
+
+const handleClick = () => {
+  emits('change-view', "Library")
+}
+
 
 </script>
 
@@ -26,7 +36,7 @@ import List from './List.vue'
         </div>
 
         <div class="library-list">
-            <List class="item" v-for="item in 8">111</List>
+            <List class="item" @click="handleClick" v-for="item in 8">111</List>
         </div>
     </div>
 
