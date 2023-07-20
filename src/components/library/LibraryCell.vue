@@ -1,7 +1,16 @@
-<script setup></script>
+<script setup>
+import { defineProps, defineEmits } from 'vue'
+
+const props = defineProps({
+  index: {
+    type: Number,
+    required: true
+  },
+})
+</script>
 <template>
     <dic class="cell">
-        <div class="index"> 1 </div>
+        <div class="index"> {{ index + 1}} </div>
         <div class="cover"></div>
         <div class="title-box">
             <div class="title">

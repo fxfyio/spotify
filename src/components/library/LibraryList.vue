@@ -1,11 +1,14 @@
 <script setup>
 import LibraryCell from "./LibraryCell.vue";
+
+
+
 </script>
 
 
 <template> 
     <div class="library-list">
-        <LibraryCell v-for="item in 100"/>
+        <LibraryCell v-for="(item, index) in 100" :index="index"/>
     </div>
 </template>
 
