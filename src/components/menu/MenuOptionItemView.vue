@@ -1,6 +1,6 @@
 <script setup>
 
-import OptionItem from './OptionItem.vue'
+import MenuOptionItem from './MenuOptionItem.vue'
 import IconCommunity from '../icons/IconCommunity.vue'
 import { defineEmits } from 'vue'
 
@@ -15,13 +15,13 @@ const handleChangeView = (title) => {
 
 <template>
     <div class="container">
-        <OptionItem title="Home" @change-view="handleChangeView">
-        <IconCommunity />
-    </OptionItem>
+        <MenuOptionItem title="Home" @change-view="handleChangeView">
+             <IconCommunity />
+         </MenuOptionItem>
 
-    <OptionItem title="Search" @change-view="handleChangeView">
-        <IconCommunity/>
-    </OptionItem>
+        <MenuOptionItem title="Search" @change-view="handleChangeView">
+            <IconCommunity/>
+        </MenuOptionItem>
     </div>
 </template>
 

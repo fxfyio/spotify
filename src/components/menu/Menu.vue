@@ -1,7 +1,7 @@
 <script setup>
 import { defineProps, defineEmits } from 'vue'
 
-import Library from './Library.vue';
+import MenuLibrary from './MenuLibrary.vue';
 import Options from './Options.vue';
 
 defineProps({
@@ -21,7 +21,7 @@ const handleClick = (title) => {
 <template>
     <div class="menu" >
         <Options  @change-view="handleClick"/>
-        <Library />
+        <MenuLibrary />
     </div>
 </template>
 
