@@ -1,7 +1,7 @@
 <script setup>
-import IconDocumentation from './icons/IconDocumentation.vue'
-import IconTooling from './icons/IconTooling.vue'
-import IconSupport from './icons/IconSupport.vue'
+import IconDocumentation from '../icons/IconDocumentation.vue'
+import IconTooling from '../icons/IconTooling.vue'
+import IconSupport from '../icons/IconSupport.vue'
 import List from './List.vue'
 
 </script>

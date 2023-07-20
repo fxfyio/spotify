@@ -1,5 +1,5 @@
 <script setup>
-import AlbumItem from './AlbumItem.vue'
+import AlbumItem from '../home/AlbumItem.vue'
 
 </script>
 

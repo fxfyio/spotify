@@ -1,8 +1,8 @@
 <script setup>
-import Menu from './components/Menu.vue'
-import Dashboard from './components/Dashboard.vue';
+import Menu from './components/menu/Menu.vue'
+import Dashboard from './components/home/Dashboard.vue';
 import PlaybackControl from './components/PlaybackControl.vue';
-import Search from './components/Search.vue';
+import Search from './components/search/Search.vue';
 import { ref } from 'vue'
 
 let mainView = ref('Home')

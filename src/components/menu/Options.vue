@@ -1,14 +1,13 @@
 <script setup>
 
 import OptionItem from './OptionItem.vue'
-import IconCommunity from './icons/IconCommunity.vue'
+import IconCommunity from '../icons/IconCommunity.vue'
 import { defineEmits } from 'vue'
 
 const emits = defineEmits(['change-view'])
 
-const handleChangeView = (view) => {    
-    console.log(view)
-  emits('change-view', view)
+const handleChangeView = (title) => {    
+  emits('change-view', title)
 }
 
 </script>
