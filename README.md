@@ -1,14 +1,12 @@
-# vue-project
+# spotify
 
-This template should help get you started developing with Vue 3 in Vite.
+spotify 学习 vue 使用
 
-## Recommended IDE Setup
+## Screenshots
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+![](./src/assets/home.jpg)
+![](./src/assets/search.jpg)
+![](./src/assets/library.jpg)
 
 ## Project Setup
 
@@ -27,4 +25,3 @@ npm run dev
 ```sh
 npm run build
 ```
-# spotify
