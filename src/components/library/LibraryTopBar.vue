@@ -1,11 +1,22 @@
 <script setup>
+import { defineProps , watchEffect} from 'vue';
 
+const props = defineProps({
+    opacity: {
+        type: Number,
+        default: 0,
+    }
+})
+
+watchEffect(() => {
+    console.log('opacity:', props.opacity);
+});
 </script>
 
 
 
 <template>
-    <div class="top-bar">
+<div class="top-bar" :style="{backgroundColor: `rgba(89, 58, 58, ${props.opacity})`}">
         <div class="left">
             <div class="back" >  </div>
             <div class="next"></div>
@@ -21,7 +32,6 @@
 
 <style scoped>
 .top-bar {
-    background-color: #303950;
     height: 60px;
     width: 100%;
     border-radius: 10px;

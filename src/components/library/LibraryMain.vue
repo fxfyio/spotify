@@ -3,9 +3,26 @@ import LibraryHeader from './LibraryHeader.vue';
 import LibraryTopBar from './LibraryTopBar.vue';
 import LibraryEvent from './LibraryEvent.vue';
 import LibraryList from './LibraryList.vue'
-import LibraryCell from './LibraryCell.vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 
-import { defineProps } from 'vue';
+const scrollPosition = ref(0);
+const libraryContainer = ref(null); 
+
+onMounted(() => {
+    const handleScroll = e => {
+        const value =  e.target.scrollTop / 500
+        scrollPosition.value = value
+        console.log(scrollPosition.value)
+    };
+
+    libraryContainer.value.addEventListener('scroll', handleScroll);
+
+    onUnmounted(() => {
+        libraryContainer.value.removeEventListener('scroll', handleScroll);
+    });
+});
+
+
 defineProps({
     index: {
         type: Number,
@@ -18,9 +35,9 @@ defineProps({
 <template>
     <div class="library">
         <div class="top-bar-box">
-            <LibraryTopBar />
+            <LibraryTopBar :opacity="scrollPosition" />
         </div>
-        <div class="library-container">
+        <div class="library-container" ref="libraryContainer"> 
             <LibraryHeader :index="index" />
             <LibraryEvent />
             <LibraryList />
@@ -62,13 +79,11 @@ defineProps({
             box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.10);
         }
     }
-    .top-bar {
+    .top-bar-box {
         position: absolute;
         z-index: 2;
-        width: calc(100vw - 300px);
+        width: calc(100vw - 310px);
         margin-right: 10px;
-        background-color: rgba(0, 0, 0, 0);  /* 半透明的黑色背景 */
-
     }
     
 }

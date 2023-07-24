@@ -15,7 +15,17 @@ import IconPlay from '../icons/IconPlay.vue';
 
             </div>
             <div class="fliter">
-                Sort by
+                <div class="dropdown">
+                    <span>Sort by</span>
+                    <div class="dropdown-content">
+                        <p class="dropdown-menu">Custom order</p>
+                        <p class="dropdown-menu">Title</p>
+                        <p class="dropdown-menu">Artist</p>
+                        <p class="dropdown-menu">Album</p>
+                        <p class="dropdown-menu">Data added</p>
+                        <p class="dropdown-menu">Duration</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -66,6 +76,31 @@ import IconPlay from '../icons/IconPlay.vue';
             margin-right: 20px;
             color: white;
             opacity: 0.7;
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #282828;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    margin-left: -100px;
+                    border-radius: 4px;
+                    align-items: center;
+                    .dropdown-menu {
+                       height: 50px; 
+                       text-align: center;
+                       width: 200px;
+                    }
+                    .dropdown-menu:hover {
+                        background-color: red;
+                    }
+                }
+            }
+            .dropdown:hover .dropdown-content {
+                 display: block;
+            }
         }
     }
 }
