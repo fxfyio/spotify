@@ -15,10 +15,14 @@ onMounted(() => {
         console.log(scrollPosition.value)
     };
 
-    libraryContainer.value.addEventListener('scroll', handleScroll);
+    if (libraryContainer.value !== null) {
+        libraryContainer.value.addEventListener('scroll', handleScroll);
+    }
 
     onUnmounted(() => {
-        libraryContainer.value.removeEventListener('scroll', handleScroll);
+        if (libraryContainer.value !== null) {
+            libraryContainer.value.removeEventListener('scroll', handleScroll);
+        }
     });
 });
 

@@ -18,6 +18,7 @@ const props = defineProps({
 const handleChangeView = (title, i) => {
   mainView.value = title
   index.value = i
+  console.log(title)
 }
 </script>
 
