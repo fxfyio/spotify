@@ -16,11 +16,11 @@ const handleChangeView = (title) => {
 <template>
     <div class="container">
         <MenuOptionItem title="Home" @change-view="handleChangeView">
-             <IconCommunity />
+             <vue-feather type="home"></vue-feather>
          </MenuOptionItem>
 
         <MenuOptionItem title="Search" @change-view="handleChangeView">
-            <IconCommunity/>
+            <vue-feather type="search"></vue-feather>
         </MenuOptionItem>
     </div>
 </template>

@@ -23,10 +23,9 @@ const handleClick = (index) => {
         <div class="library">
             <div class="top">
               <IconDocumentation class="item"/>
-              <span> You Library</span>  
-              <IconSupport  class="item" />
-              <IconTooling  class="item" />
-
+              <span class="item"> You Library</span>  
+              <vue-feather type="plus" class="item plus"></vue-feather>
+              <vue-feather type="arrow-right" class="item arrow-right"></vue-feather>
             </div>
             <div class="bottom">
                 <div class="item">PlayLists</div>
@@ -56,12 +55,32 @@ const handleClick = (index) => {
     .top {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         height: 44px;
         color: white;
-        .item {
+        opacity: 0.75;
+        .item{
             cursor: pointer;
+            margin-left: 20px;
         }
+        .plus {
+            padding: 4px;
+        }
+
+        .arrow-right {
+            padding: 4px;
+        }
+
+        .plus:hover {
+            background-color:#232323;
+            border-radius: 50%;
+        }
+
+        .arrow-right:hover {
+            background-color:#232323;
+            border-radius: 50%;
+        }
+
     }
     .bottom {
         display: flex;
@@ -77,6 +96,8 @@ const handleClick = (index) => {
             color: white;
             cursor: pointer;
         }
+        
+ 
 
     }
 }

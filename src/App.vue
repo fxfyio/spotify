@@ -25,7 +25,6 @@ const handleChangeView = (title, i) => {
 <template>
   <div class="container">
     <div class="container-content">
-    
     <header class="wrapper">
       <Menu @change-view="handleChangeView" />
     </header>
