@@ -2,13 +2,25 @@
 
 import MenuOptionItem from './MenuOptionItem.vue'
 import IconCommunity from '../icons/IconCommunity.vue'
-import { defineEmits } from 'vue'
-
+import { defineEmits, onMounted } from 'vue'
+import { getAlbums } from '../../api/album'
 const emits = defineEmits(['change-view'])
 
 const handleChangeView = (title) => {    
   emits('change-view', title)
 }
+
+onMounted(async () => {
+    const id = '4aawyAB9vmqN3uQ7FjRGTy'
+    const market = 'ES';
+    try {
+        const res = await getAlbums(id, market)
+        console.log(res)
+    } catch (error) {
+        console.log(error);
+    }
+});
+
 
 </script>
 
